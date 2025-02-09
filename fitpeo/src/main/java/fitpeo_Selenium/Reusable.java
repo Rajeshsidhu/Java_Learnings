@@ -29,7 +29,7 @@ public class Reusable {
 	public void Browser() {
 		WebDriverManager.edgedriver().setup();
 		 driver = new EdgeDriver();
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); 
 		driver.get("https://fitpeo.com");
 
 	}
