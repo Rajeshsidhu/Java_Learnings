@@ -3,6 +3,7 @@ package methods;
 import java.util.Scanner;
 
 import loops_conditions.Loops;
+import oops.Car_Constructor;
 import oops.Encapsulation;
 
 /**
@@ -25,9 +26,15 @@ public class Main_Method
     	System.out.println("Available Balance: "+oops_obj.getBalance());
     	oops_obj.setAccountHolder("Sidhu");
     	oops_obj.setBalance(90000.0);
-    	
     	oops_obj.displayAccountDetails();
     	System.out.println("Encapsulation concept was achived");
+    	
+    	Car_Constructor obj_car = new Car_Constructor("unknown",0.00);
+    	System.out.println("Brand: " +obj_car.getCar_Constructor_brand());
+    	System.out.println("Price: " +obj_car.getCar_Constructor_price());
+    	obj_car.setCar_Constructor_brand("Lambo");
+    	obj_car.set_Car_Constructor_price(5000000.00);
+    	obj_car.display_Details();
     	
     	
     	
