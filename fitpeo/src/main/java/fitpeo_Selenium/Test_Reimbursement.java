@@ -44,7 +44,7 @@ public class Test_Reimbursement extends Reusable {
 		try {
 		// opening browser and navigating to Fitpeo homepage
 			
-			reuse.Browser();
+			Reusable.Browser();
 			sparkReportes.config().setTheme(Theme.DARK);
 			sparkReportes.config().setReportName("Fitpeo_Reimbursement_functinality_reports");
 			System.out.println("Browser opened successfully");

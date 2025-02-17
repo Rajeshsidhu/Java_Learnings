@@ -3,8 +3,7 @@ package oops;
 public class Car_Constructor {
 	private String brand;
 	private double price;
-	
-	
+
 	public Car_Constructor() {
 		this.brand ="Unknown";
 		this.price = 0.00;

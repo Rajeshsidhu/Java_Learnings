@@ -26,7 +26,7 @@ public class Reusable {
 
 //	public static WebDriver driver = null;
 
-	public void Browser() {
+	public static void Browser() {
 		WebDriverManager.edgedriver().setup();
 		 driver = new EdgeDriver();
 		driver.manage().window().maximize(); 
@@ -35,7 +35,7 @@ public class Reusable {
 	}
 	//method for explicit wait
 	public void waitHandler(WebDriver driver, int timeoutInSeconds) {
-		this.driver = driver;
+//		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
 		
 	}
