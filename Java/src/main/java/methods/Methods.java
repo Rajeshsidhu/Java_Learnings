@@ -23,10 +23,13 @@ public class Methods
     {
 //oop's concepts
 // Encapsulation
-    	Encapsulation oops_obj = new Encapsulation("rajesh", 500000.0);
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print("Enter Encapsulated account Name: ");
+    	Encapsulation oops_obj = new Encapsulation(sc.nextLine(), 500000.0);
     	System.out.println("Account Holder Name: "+oops_obj.getAccountHolder());
     	System.out.println("Available Balance: "+oops_obj.getBalance());
-    	oops_obj.setAccountHolder("Sidhu");
+    	System.out.print("Enter New Encapsulated account Name: ");
+    	oops_obj.setAccountHolder(sc.nextLine());
     	oops_obj.setBalance(90000.0);
     	oops_obj.displayAccountDetails();
     	System.out.println("****************Encapsulation concept was achived***************");
